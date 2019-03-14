@@ -2,7 +2,6 @@ package ca.pfv.spmf.algorithms.frequentpatterns.DFIGrowth;
 
 /* This is an implementation of the DFI-Growth algorithm. 
 * 
-* Copyright (c) 2018  Wu Cheng-Wei, Huang Jian-Tao
 * 
 * This file is part of the SPMF DATA MINING SOFTWARE 
 * (http://www.philippe-fournier-viger.com/spmf). 
@@ -18,7 +17,6 @@ package ca.pfv.spmf.algorithms.frequentpatterns.DFIGrowth;
 * You should have received a copy of the GNU General Public License along with 
 * SPMF. If not, see <http://www.gnu.org/licenses/>. 
 * 
-* @author Wu Cheng-Wei, Huang Jian-Tao, 2018
 */
 
 import java.io.BufferedReader;
@@ -504,7 +502,7 @@ public class AlgoDFIGrowth {
 	 * Print statistics about the algorithm execution to System.out.
 	 */
 	public void printStats() {
-		System.out.println("=============  DFI-GROWTH - STATS =============");
+		System.out.println("=============  DFI-GROWTH v.2.34 - STATS =============");
 		long temps = endTime - startTimestamp;
 		System.out.println(" Transactions count from database : " + transactionCount);
 		System.out.print(" Max memory usage: " + MaxMemory + " mb \n");
@@ -519,7 +517,7 @@ public class AlgoDFIGrowth {
 	 * @throws IOException 
 	 */
 	public void writeOutPut(String output) throws IOException {
-		FileWriter fw = new FileWriter(output,true);
+		FileWriter fw = new FileWriter(output);
 		BufferedWriter bfw = new BufferedWriter(fw);
 		for(int i=0;i<Intdata.size();i++) {
 			for(int j=0;j<Intdata.get(i).size();j++) {
