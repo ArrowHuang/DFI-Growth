@@ -1,4 +1,4 @@
-# DFI-Growth
+# DFI-Growth Algorithm
 
 **–*What is DFI-Growth?***     
   DFI-Growth is an algorithm for deriving frequent itemsets from frequent closed itemsets by pattern growth.
